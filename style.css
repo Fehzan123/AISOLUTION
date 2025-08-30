@@ -50,11 +50,58 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #2c3e50, #3498db);
-  color: white;
+  background: url("images-hero.jpg") no-repeat center center/cover;
+  color: rgb(255, 251, 251);
   text-align: center;
   padding: 20px;
 }
+
+.hero h1 {
+  font-weight: 900;   /* super bold */
+  font-size: 3rem;    /* bigger size for heading */
+}
+
+.hero p {
+  font-weight: 600;   /* semi-bold for paragraph */
+  font-size: 1.2rem;
+}
+.cards-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
 .section {
   padding: 80px 20px;
   text-align: center;
