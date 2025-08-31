@@ -1,10 +1,19 @@
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('active');
+
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
+
+
+
+
 (function(){
   const slider = document.getElementById('cardSlider');
   const slides = slider.querySelector('.slides');
-  const slideCount = Math.ceil(slides.querySelectorAll('.card').length / 3); // 9 cards / 3 = 3 slides
+  const slideCount = Math.ceil(slides.querySelectorAll('.card2').length / 3); // 9 cards / 3 = 3 slides
   const dots = slider.querySelectorAll('.dot');
   const prev = slider.querySelector('.prev');
   const next = slider.querySelector('.next');
@@ -53,3 +62,13 @@ const slides1 = document.querySelector('.slides1');
     setInterval(() => showSlide1(index1 + 1), 4000);
 
 // hero end
+
+// start footer
+function subscribe() {
+  const email = document.getElementById("email").value;
+  if (email) {
+    alert("Thank you for subscribing with " + email);
+  } else {
+    alert("Please enter a valid email address.");
+  }
+}

@@ -40,11 +40,7 @@ body {
 .nav-links a:hover {
   color: #f39c12;
 }
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+
 .hero {
   height: 100vh;
   display: flex;
@@ -320,8 +316,8 @@ body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter
   height: 75vh;
 }
 .Artificial img{
-  width: 50%;
-  height: 50vh;
+  width: 25%;
+  height: 25vh;
 }
 .cards-container {
   display: grid;
@@ -338,14 +334,15 @@ body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter
   min-height: 400px;          /* increase card height */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card img {
-  width: 100%;
-  height: 220px;   /* larger image height */
+  width: 50%;
+  height: 120px;   /* larger image height */
   object-fit: cover;
   border-radius: 10px;
+  margin-left: 80px;
 }
 
 
