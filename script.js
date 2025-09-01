@@ -1,12 +1,20 @@
 
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector("header .menu-toggle"); // only header toggle
+  const navLinks = document.querySelector("header .nav-links");
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Optional: close menu when clicking a link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
 });
-
 
 
 
